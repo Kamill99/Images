@@ -1,0 +1,28 @@
+<div class="container">
+  <div class="pagination-controls">
+    <button mat-raised-button color="primary" (click)="previousPage()" [disabled]="currentPage === 1">
+      {{ "previous" | translate }}
+    </button>
+    <span>{{ "page" | translate }} {{ currentPage }}</span>
+    <button mat-raised-button color="primary" (click)="nextPage()" [disabled]="currentPage === totalPages">
+      {{ "next" | translate }}
+    </button>
+  </div>
+
+  <div class="images-list">
+    @for (image of images; track image.id) {
+      <mat-card appearance="outlined">
+        <img mat-card-image ngSrc='{{image.download_url}}' alt="Photo" width="250" height="200">
+        <mat-card-content>
+          <p>{{ "author" | translate }} {{ image.author }}</p>
+        </mat-card-content>
+        <mat-card-actions>
+          <button mat-raised-button [routerLink]="['/image', image.id]">{{ "edit" | translate }}</button>
+          <a [href]="image.url" target="_blank">
+            <button mat-raised-button>{{ "source" | translate }}</button>
+          </a>
+        </mat-card-actions>
+      </mat-card>
+    }
+  </div>
+</div>

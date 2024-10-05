@@ -1,0 +1,30 @@
+<div class="image-detail-container row">
+  <button mat-raised-button color="primary" (click)="goBack()">{{ "goBack" | translate }}</button>
+  <h2>{{ "editImage" | translate }}</h2>
+  <img [ngSrc]="imageUrl" alt="Image {{ imageId }}" height="350" width="350">
+
+  <h4>{{ "colors" | translate }}</h4>
+  <div class="button-container">
+    <button mat-raised-button color="primary" (click)="changeColors(true)" [disabled]="!imageWithColors">
+      {{ "withoutColors" | translate }}
+    </button>
+    <button mat-raised-button color="primary" (click)="changeColors(false)" [disabled]="imageWithColors">
+      {{ "withColors" | translate }}
+    </button>
+  </div>
+  <h4>{{ "blurLevel" | translate }}</h4>
+  <div class="button-container">
+    <button mat-raised-button color="primary" (click)="changeBlurLevel(BlurLevelOperations.DECREASE)"
+            [disabled]="!blurLevel">
+      {{ "decrease" | translate }}
+    </button>
+    {{ blurLevel }}
+    <button mat-raised-button color="primary" (click)="changeBlurLevel(BlurLevelOperations.INCREASE)"
+            [disabled]="blurLevel === 10">
+      {{ "increase" | translate }}
+    </button>
+  </div>
+  <button mat-raised-button color="primary" (click)="viewImageSource()">
+    {{ "source" | translate }}
+  </button>
+</div>

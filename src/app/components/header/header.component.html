@@ -1,0 +1,14 @@
+<div class="header">
+  <div class="title"><a href="">{{ 'title' | translate }}</a></div>
+  <div class="language-switcher">
+    @if (lang === 'pl') {
+      <img ngSrc="assets/flags/poland.png" alt="PL" (click)="changeLanguage('pl')" height="30" width="35"
+           class="selected-language"/>
+      <img ngSrc="assets/flags/united-kingdom.png" alt="EN" (click)="changeLanguage('en')" height="30" width="35"/>
+    } @else {
+      <img ngSrc="assets/flags/poland.png" alt="PL" (click)="changeLanguage('pl')" height="30" width="35"/>
+      <img ngSrc="assets/flags/united-kingdom.png" alt="EN" (click)="changeLanguage('en')" height="30" width="35"
+           class="selected-language"/>
+    }
+  </div>
+</div>

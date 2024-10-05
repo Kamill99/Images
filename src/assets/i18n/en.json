@@ -1,0 +1,19 @@
+{
+  "title": "GRAPHICS",
+  "welcomeMessage": "Welcome to the website dedicated to graphics",
+  "showImages": "Show examples images",
+  "author": "Author: ",
+  "source": "Source",
+  "previous": "Previous",
+  "page": "Page",
+  "next": "Next",
+  "edit": "Edit",
+  "editImage": "Edit image",
+  "withoutColors": "Without colors",
+  "withColors": "With colors",
+  "colors": "Colors",
+  "blurLevel": "Blur level",
+  "increase": "Increase",
+  "decrease": "Decrease",
+  "goBack": "Go back"
+}

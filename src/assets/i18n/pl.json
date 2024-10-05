@@ -1,0 +1,19 @@
+{
+  "title": "GRAFIKI",
+  "welcomeMessage": "Witamy na stronie poświęconej grafikom",
+  "showImages": "Wyświetl przykładowe obrazki",
+  "author": "Autor: ",
+  "source": "Źródło",
+  "previous": "Poprzednia",
+  "page": "Strona",
+  "next": "Następna",
+  "edit": "Edytuj",
+  "editImage": "Edytuj obrazek",
+  "withoutColors": "Bez kolorów",
+  "withColors": "Kolorowy",
+  "colors": "Kolory",
+  "blurLevel": "Poziom rozmazania",
+  "increase": "Zwiększ",
+  "decrease": "Zmniejsz",
+  "goBack": "Wróć"
+}
