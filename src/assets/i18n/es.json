@@ -1,0 +1,19 @@
+{
+  "title": "GRÁFICOS",
+  "welcomeMessage": "Bienvenido al sitio web dedicado a los diseñadores gráficos",
+  "showImages": "Ver imágenes de muestra",
+  "author": "Autor: ",
+  "source": "Fuente",
+  "previous": "Anterior",
+  "page": "Página",
+  "next": "Siguiente",
+  "edit": "Editar",
+  "editImage": "Editar imagen",
+  "withoutColors": "Sin colores",
+  "withColors": "Colorido",
+  "colors": "Colores",
+  "blurLevel": "Nivel de frotis",
+  "increase": "Aumentar",
+  "decrease": "Reduzca",
+  "goBack": "Devolución"
+}

@@ -17,10 +17,10 @@ export class AppComponent {
   private title: string = 'Images';
 
   constructor(protected translate: TranslateService) {
-    translate.addLangs(['pl', 'en']);
+    translate.addLangs(['pl', 'en', 'es']);
     translate.setDefaultLang('pl');
     const browserLang = translate.getBrowserLang() as string;
-    translate.use(browserLang.match(/pl|en/) ? browserLang : 'pl');
+    translate.use(browserLang.match(/pl|en|es/) ? browserLang : 'pl');
   }
 
   prepareRoute(outlet: RouterOutlet) {
